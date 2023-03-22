@@ -6,15 +6,26 @@ public class Arithimetic {
     int a;
     int b;
 
+    //Contructor - simple
+    public Arithimetic() {
+
+    }
+
+    //Contructor with args
+    public Arithimetic(int arg1, int arg2) {
+        this.a = arg1;
+        this.b = arg2;
+    }
+
     //Method without return
     public void sum() {
-        int result = a + b;
+        int result = this.a + this.b;
         System.out.println("result = " + result);
     }
 
     //Method with return
     public int sumWithReturn() {
-        int result = a + b;
+        int result = this.a + this.b;
         return result;
     }
 
@@ -25,4 +36,5 @@ public class Arithimetic {
         return sumWithReturn();
         //  return a + b;
     }
+
 }

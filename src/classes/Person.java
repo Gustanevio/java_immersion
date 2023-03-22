@@ -3,8 +3,8 @@ package classes;
 public class Person {
 
     //atributes
-    String name;
-    String lastName;
+    public String name;
+    public String lastName;
 
     public void showAtributes() {
         System.out.println("First Name = " + name);

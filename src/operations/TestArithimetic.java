@@ -17,5 +17,9 @@ public class TestArithimetic {
         Arithimetic a3 = new Arithimetic();
         int result2 = a3.sumWithParam(15, 35);
         System.out.println("Result method with parammeter = " + result2);
+        
+        //Teste Constructor
+        Arithimetic a4 = new Arithimetic(5, 8);
+        a4.sum();
     }
 }
