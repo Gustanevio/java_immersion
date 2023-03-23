@@ -1,7 +1,9 @@
 package staticContent.domain;
 
 public class Person {
-private int idPerson;
-private statis int personCounter;
-private String name;
+
+    private int idPerson;
+    private static int personCounter;
+    private String name;
+    
 }
