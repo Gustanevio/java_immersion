@@ -3,17 +3,17 @@ package mx.com.gm.selles;
 public class Product {
     private final int idProduct;
     private String name;
-    private double precio;
+    private double price;
     private static int productCounter;
     
     private Product(){
         this.idProduct= ++Product.productCounter;
     }
 
-    public Product(String name, double precio) {
+    public Product(String name, double price) {
         this();
         this.name = name;
-        this.precio = precio;
+        this.price = price;
     }
     public int getIdProduct(){
         return idProduct;
@@ -26,12 +26,12 @@ public class Product {
         this.name = name;
     }
 
-    public double getPrecio() {
-        return precio;
+    public double getPrice() {
+        return price;
     }
 
-    public void setPrecio(double precio) {
-        this.precio = precio;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     @Override
@@ -40,7 +40,7 @@ public class Product {
         sb.append("Product{");
         sb.append("idProduct=").append(idProduct);
         sb.append(", name=").append(name);
-        sb.append(", precio=").append(precio);
+        sb.append(", price=").append(price);
         sb.append('}');
         return sb.toString();
     }
