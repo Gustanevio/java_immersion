@@ -10,11 +10,11 @@ public interface IDataAccess {
 
     List<Movie> list(String resourceName) throws ReadDataEx;
 
-    void white(Movie movie, String resourceName, boolean attach) throws WriteDataEx;
+    void write(Movie movie, String resourceName, boolean attach) throws WriteDataEx;
 
-    String read(String resourceName, String read) throws ReadDataEx;
+    String find(String resourceName, String read) throws ReadDataEx;
 
-    void save(String resourceName) throws AccessDataEx;
+    void create(String resourceName) throws AccessDataEx;
 
     void delete(String resourceName) throws AccessDataEx;
 }
