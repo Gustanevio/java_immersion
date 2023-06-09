@@ -45,6 +45,5 @@ public class MovieCatalogPresentation {
                     break;
             }
         }
-
     }
 }
